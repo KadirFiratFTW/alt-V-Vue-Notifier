@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify V1.0</title>
+    <link rel="stylesheet" href="snotify-material.css">
+    <style>
+        body {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        .notif_container {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="notif_container">
+        <vue-snotify></vue-snotify>
+    </div>
+</body>
+<!-- <script src="jquery.min.js"></script> -->
+<!-- <script src="app.js"></script> -->
+<script src="vue.js"></script>
+<script src="vue-snotify.js"></script>
+
+<script>
+
+    const VueApp = new Vue({
+        el: "#app",
+        data: {
+            style: 'material',
+            position: 'rightTop'
+        }
+    })
+
+    function addNotify(text, type) {
+        console.log(type);
+        if (type == "success") {
+            VueApp.$snotify.success(text, {
+                timeout: 3000,
+                showProgressBar: true,
+                closeOnClick: false,
+                pauseOnHover: true,
+                position: 'rightTop'
+            });
+        } else if (type == "warning") {
+            VueApp.$snotify.warning(text, {
+                timeout: 3000,
+                showProgressBar: true,
+                closeOnClick: false,
+                pauseOnHover: true,
+                position: 'rightTop'
+            });
+        } else {
+            VueApp.$snotify.error(text, {
+                timeout: 3000,
+                showProgressBar: true,
+                closeOnClick: false,
+                pauseOnHover: true,
+                position: 'rightTop'
+            });
+        }
+    }
+
+
+
+    alt.on("addNotif", addNotify)
+
+
+
+</script>
+
+</html>
