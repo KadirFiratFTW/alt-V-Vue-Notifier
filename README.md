@@ -4,9 +4,9 @@ Vue-snotify is not mine. I just used a vue plugin in this resource..
 
 ## Installation
 
-1 - Download the zip. 
-2 - Create a new directory in your server resources and rename it to "vue-notifier". Extract all files into this directory.
-3 - Your folder structure has to be like this ;
+1 - Download the zip.  
+2 - Create a new directory in your server resources and rename it to "vue-notifier". Extract all files into this directory.  
+3 - Your folder structure has to be like this ;  
 
 ```js
 ==vue-notifier
@@ -20,7 +20,7 @@ Vue-snotify is not mine. I just used a vue plugin in this resource..
 ===resource.cfg
 ```
 
-4 - add "vue-notifier" into your server.cfg.
+4 - add "vue-notifier" into your server.cfg.  
 
 ## Usage
 
